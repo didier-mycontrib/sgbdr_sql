@@ -1,0 +1,1 @@
+﻿SELECT type_concours ,count(*) as nombre ,  sum(gains) as total_gains  ,  avg(gains) as moyenne FROM bo.concours WHERE date_format(date_concours,'%Y') = '2005' group by type_concours ;

@@ -1,0 +1,1 @@
+﻿SELECT nom, date_format(date_naissance,'%Y %M') as 'date de naissance' from cheval

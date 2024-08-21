@@ -1,0 +1,1 @@
+﻿SELECT no_id, if(isnull(temps_travail) , 'Repos', concat('Travail ' ,code_type)) as Travail  from  travail_cheval WHERE date_format(date_jour,'%Y-%m-%d') = '2005-01-04';

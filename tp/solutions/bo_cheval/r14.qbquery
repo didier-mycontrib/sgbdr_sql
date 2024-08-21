@@ -1,0 +1,2 @@
+﻿SELECT * FROM cout_aliment c1
+where c1.cout = (select c2.cout from cout_aliment c2 where c1.annee =  c2.annee + 1 and c1.type_ration = c2.type_ration);

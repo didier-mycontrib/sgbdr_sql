@@ -1,0 +1,9 @@
+MariaDB en version 10.6 ou plus (ou bien MySQL 8)
+https://mariadb.org/download/?t=mariadb&p=mariadb&r=10.6.19&os=windows&cpu=x86_64
+NB: installer éventuellement/facultativement le visualiseur "HeidiSQL"
+
+MySqlWorkbench 8 CE
+
+éventuel concurrent "DBeaver" (pas spécifique à MySQL)
+
+

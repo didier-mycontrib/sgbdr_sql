@@ -1,0 +1,3 @@
+﻿SELECT ch.nom as nom_cheval , case co.type_concours  when 'DR' then 'Dressage' when 'OB' then 'Obstacle' when 'CP' then 'Complet' end  as concours, co.type_epreuve , ca.nom as cavalier , concat(l.ville,' ',l.lib_dept) as lieu
+FROM concours co inner join cavalier ca inner join lieu_concours l inner join cheval ch
+on co.id_cavalier = ca.id and co.id_lieu = l.id_lieu and co.no_id = ch.numero_id where co.date_concours = '2006-04-16' order by ca.nom;

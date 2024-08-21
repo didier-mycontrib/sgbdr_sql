@@ -1,0 +1,6 @@
+﻿SELECT ch.nom , '' FROM cheval ch WHERE ch.cplt_nom = 'Gagnant'
+UNION 
+SELECT sum(rj.qte) , ta.libelle 
+     FROM bo.ration_jour rj JOIN bo.type_aliment ta  ON rj.type_ration = ta.type 
+     JOIN cheval ch ON rj.no_id = ch.numero_id 
+     WHERE  ch.cplt_nom = 'Gagnant' and rj.date_ration like '2006%' group by rj.type_ration;

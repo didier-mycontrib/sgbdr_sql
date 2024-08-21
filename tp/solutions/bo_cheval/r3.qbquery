@@ -1,0 +1,2 @@
+﻿SELECT DISTINCT no_id FROM concours where type_concours = 'DR'
+                       and date_concours between '2006-03-01' and '2006-06-30';

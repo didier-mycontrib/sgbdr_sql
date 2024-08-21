@@ -1,0 +1,4 @@
+﻿SELECT  sum(r.qte) as qte_2006 , t.libelle as ration  FROM cheval c inner join ration_jour r inner join type_aliment t
+on c.numero_id = r.no_id and t.type = r.type_ration
+where  c.nom='Mistral' and r.date_ration like '2006%'
+group by r.type_ration;

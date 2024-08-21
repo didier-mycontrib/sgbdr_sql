@@ -1,0 +1,1 @@
+fonctionnalité intéressante : menu "Database ---> Reverse engineer .." (NB: fonctionne partiellement si manque de contrainte référentielle)

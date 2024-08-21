@@ -1,0 +1,3 @@
+﻿SELECT r.libelle_code , count(c.code_race)
+FROM race r left outer join cheval c
+on r.race_code = c.code_race group by r.race_code;

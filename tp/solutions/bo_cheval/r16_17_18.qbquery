@@ -1,0 +1,19 @@
+﻿INSERT INTO cavalier(id,nom,prenom) VALUES (11,'Bon', 'Jean')
+si pas de paramétrage sur cavalier.id (pas déclaré comme PRIMARY KEY)
+---> effet bizzare : ligne en double (ou triple) si requête déclenchée plusieurs fois
+
+
+DELETE FROM cavalier WHERE prenom = 'Jean'  (avec Edit/preferences  , no safe_update mode , redémarrage)
+
+alter table cavalier add primary key (id);
+INSERT INTO cavalier(id,nom,prenom) VALUES (11,'Bon', 'Jean')
+INSERT INTO cavalier(id,nom,prenom) VALUES (11,'Bon', 'Jean')  //second ajout refusé avec même clef primaire
+
+DELETE FROM cavalier WHERE prenom = 'Jean'
+
+ALTER TABLE cavalier CHANGE id id INT(2) AUTO_INCREMENT;
+
+INSERT INTO cavalier(nom,prenom) VALUES ('Bon', 'Jean');
+UPDATE cavalier SET nom='Aimare' WHERE prenom = 'Jean';
+
+DELETE FROM cavalier WHERE prenom = 'Jean';

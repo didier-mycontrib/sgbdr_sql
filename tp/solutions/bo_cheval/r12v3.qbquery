@@ -1,0 +1,3 @@
+﻿SELECT ch.nom as nom_cheval , t.libelle_type  as concours, co.type_epreuve , ca.nom as cavalier , concat(l.ville,' ',l.lib_dept) as lieu
+FROM concours co inner join cavalier ca inner join lieu_concours l inner join cheval ch inner join type_travail t
+on co.id_cavalier = ca.id and co.id_lieu = l.id_lieu and co.no_id = ch.numero_id and co.type_concours = t.code_type where co.date_concours = '2006-04-16';

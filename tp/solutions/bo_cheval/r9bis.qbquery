@@ -1,0 +1,2 @@
+﻿SELECT nom , ro.libelle_robe as robe, ra.libelle_code as race FROM cheval c inner join robes ro inner join race ra
+on c.code_race = ra.race_code and ro.code_robe = c.code_robe;

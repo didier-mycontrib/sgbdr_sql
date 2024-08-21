@@ -1,0 +1,1 @@
+﻿SELECT date_format(date_ration,'%Y-%m') as mois , sum(qte) FROM ration_jour WHERE type_ration= 'F' group by date_format(date_ration,'%Y-%m') ;

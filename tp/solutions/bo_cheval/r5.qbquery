@@ -1,0 +1,1 @@
+﻿SELECT SUM(qte) as qte_foin_2006 FROM ration_jour where type_ration = 'F' and date_ration between '2006-01-01' and '2006-12-31' ;

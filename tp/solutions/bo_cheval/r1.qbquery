@@ -1,0 +1,2 @@
+﻿SELECT * FROM lieu_concours where region ='Ile de France';
+SELECT ville FROM lieu_concours where region ='Ile de France';
