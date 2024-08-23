@@ -1,0 +1,1 @@
+SELECT d.nom as dep , r.nom as region FROM departement d LEFT JOIN Region r ON d.refRegion = r.num

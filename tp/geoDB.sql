@@ -14,7 +14,7 @@ DROP TABLE IF EXISTS Region;
 CREATE TABLE Region( 
     num VARCHAR(8) PRIMARY KEY,
 	nom VARCHAR(64) ,
-	chef_lieu VARCHAR(32)
+	chef_lieu VARCHAR(32) DEFAULT '?'
 ) ENGINE=InnoDB;
 # via des quotes inversees , un nom de tables ou de colonne pourrait comporter
 # des espaces ex `chef lieu`
@@ -22,7 +22,7 @@ CREATE TABLE Region(
 
 CREATE TABLE Departement( 
     numero VARCHAR(6) PRIMARY KEY,
-	nom VARCHAR(48) ,
+	nom VARCHAR(48) NOT NULL,
 	population INTEGER,
 	superficie INTEGER,
 	prefecture VARCHAR(48),

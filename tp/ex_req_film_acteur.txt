@@ -1,0 +1,5 @@
+SELECT a.nom , f.titre FROM acteur_film af JOIN acteur a ON af.idActeur = a.id
+                                           JOIN film f ON af.idFilm = f.id
+						WHERE a.nom = 'Duboscq'
+
+
