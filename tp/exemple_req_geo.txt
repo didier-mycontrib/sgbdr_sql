@@ -1,1 +1,19 @@
 SELECT d.nom as dep , r.nom as region FROM departement d LEFT JOIN Region r ON d.refRegion = r.num
+======================
+CREATE VIEW DepartementRegion AS SELECT d.numero , d.nom , r.nom as nom_region FROM departement d LEFT JOIN region r ON  d.refRegion = r.num;
+===================
+select * from DepartementRegion
+select * from DepartementRegion WHERE numero < 30
+select nom , nom_region from DepartementRegion WHERE nom_region = 'Normandie'
+
+======
+START TRANSACTION;
+UPDATE departement SET population=700000 WHERE numero=02;
+UPDATE departement SET population=700000 WHERE numero=14;
+-- COMMIT ou ROLLBACK (a declencher plus tard) selon eventuelles erreurs
+==========
+GRANT SELECT,INSERT,UPDATE
+  ON devisedb.*
+     TO mydbuser@'%'
+    IDENTIFIED BY 'mypwd';
+FLUSH PRIVILEGES;
