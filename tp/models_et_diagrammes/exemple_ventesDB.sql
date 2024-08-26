@@ -1,0 +1,15 @@
+-- INSERT INTO produit(nom,prix_ht) VALUES ('cahier', 3.3);
+-- INSERT INTO produit(nom,prix_ht, caracteristiques) VALUES ('stylo', 1.8 , 'bille fine');
+-- INSERT INTO adresse(rue, codePostal,ville) VALUES('rue1', '75001', 'Paris');
+-- INSERT INTO client(prenom,nom, id_adresse) VALUES ('jean', 'Bon',1);
+-- INSERT INTO adresse(rue, codePostal,ville) VALUES('rue2', '76000', 'Rouen');
+-- INSERT INTO client(prenom,nom,id_adresse) VALUES ('alain', 'Therieur',2);
+-- INSERT INTO commande(date_commande,id_client) VALUES ('2024-08-26',1);
+-- INSERT INTO ligne_commande(commande_numero,id_produit,quantite) VALUES (1,1,2);
+-- INSERT INTO ligne_commande(commande_numero,id_produit) VALUES (1,2);
+-- INSERT INTO commande(date_commande,id_client) VALUES ('2024-08-26',2);
+-- INSERT INTO ligne_commande(commande_numero,id_produit,quantite) VALUES (2,1,4);
+-- SELECT * from produit;
+-- SELECT * from client;
+-- SELECT * from commande;
+-- SELECT * from ligne_commande;
