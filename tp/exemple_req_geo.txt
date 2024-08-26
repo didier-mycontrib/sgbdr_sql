@@ -13,7 +13,7 @@ UPDATE departement SET population=700000 WHERE numero=14;
 -- COMMIT ou ROLLBACK (a declencher plus tard) selon eventuelles erreurs
 ==========
 GRANT SELECT,INSERT,UPDATE
-  ON devisedb.*
-     TO mydbuser@'%'
+  ON geoDB.*
+     TO 'mydbuser'@'%'
     IDENTIFIED BY 'mypwd';
 FLUSH PRIVILEGES;
